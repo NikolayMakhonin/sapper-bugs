@@ -40,7 +40,9 @@ export default {
 				exclude: ['node_modules/@babel/**'],
 				presets: [
 					['@babel/preset-env', {
-						targets: '> 0.25%, not dead'
+						targets: {
+							chrome: '30'
+						}
 					}]
 				],
 				plugins: [
